@@ -1,0 +1,109 @@
+
+Coursera Capstone Project
+
+Coursera IBM Data Science Certification
+Final Report
+
+Varun Ghorpade
+
+Introduction
+1.1 Scenario and Background I am currently living in Singapore, within walking distance to Downtown "Telok Ayer MRT metro station" . I also enjoy great venues and attractions,
+such as international cuisine, entertainment and shopping. I have an offer to move to work to Manhattan NY and I would like to move if I can find a
+place to live similar with similar venues.
+
+1.2 Problem to be resolved How to find an apartment in Manhattan with the following conditions: • Apartment with min 2 bedrooms • Monthly rent not to exceed US$7000/month • Located within walking distance (<=1.0 mile, 1.6 km) from a subway metro station in Manhattan • Venues and amenities as in my current residence.
+
+1.3 Interested Audience I believe the methodology, tools and strategy used in this project is relevant for a person or entity considering moving to a major city in US, Europe or Asia. Europe, US or Asia, Likewise, it can be helpful approach to explore the opening of a new business. The use of Foursquare data and mapping techniques combined with data analysis will help resolve the key questions arisen. Lastly, this project is a good practical case for a person developing Data Science skills.
+
+Data Section
+2.1 Data Requirements
+
+Geodata for current residence in Singapore with venues established using Foursquare.
+List of Manhattan (MH) neighborhoods with clustered venues established via Foursquare (as in Course Lab). https://en.wikipedia.org/wiki/List_of_Manhattan_neighborhoods#Midtown_neighborhoods
+List of subway metro stations in Manhattan with addresses and geo data (lat,long): https://en.wikipedia.org/wiki/List_of_New_York_City_Subway_stations_in_Manhattan) , (https://www.google.com/maps/search/manhattan+subway+metro+stations/@40.7837297,-74.1033043,11z/data=!3m1!4b1)
+List of apartments for rent in Manhattan area with information on neighborhood location, address, number of beds, area size, monthly rent price and complemented with geo data via Nominatim. http://www.rentmanhattan.com/index.cfm?page=search&state=results https://www.nestpick.com/search?city=new-
+Place to work in Manhattan (Park Avenue and 53rd St) for reference
+2.2 Data Sources, Data Processing and Tools used
+
+Singapore data and map is to be created with use of Nominatim , Foursquare and Folium mapping
+Manhattan neighborhoods were obtained from Wikipedia and organized by Neighborhoods with geodata via Nominatim for mapping with Folium.
+List of Subway stations was obtained via Wikipedia, NY Transit web site and Google map.
+List of apartments for rent was consolidated from web-scraping real estate sites for MH. The geolocation (lat,long) data was found with algorithm coding and using Nominatim.
+Folium map was the basis of mapping with various features to consolidate all data in ONE map where one can visualize all details needed to make a selection of apartment.
+Methodology
+The Strategy to find the answer:
+
+The strategy is based on mapping the described data in section 2.0, in order to facilitate the choice of at least two candidate places for rent. The information will be consolidated in ONE MAP where one can see the details of the apartment, the cluster of venues in the neighborhood and the relative location from a subway station and from work place. A measurement tool icon will also be provided. The popups on the map items will display rent price, location and cluster of venues applicable.
+
+The Tools: Web-scraping of sites is used to consolidate data-frame information which was saved as csv files for convenience and to simply the report. Geodata was obtained by coding a program to use Nominatim to get latitude and longitude of subway stations and also for each of (144 units) the apartments for rent listed.
+
+Geopy_distance and Nominatim were used to establish relative distances. Seaborn graphic was used for general statistics on rental data.
+
+Maps with popups labels allow quick identification of location, price and feature, thus making the selection very easy.
+
+Execution and Results
+Current residence Neighborhood in Singapore
+
+enter image description here
+
+Venues around Neighborhood in
+
+enter image description here
+
+Manhattan Map - Neighborhoods and Cluster of Venues
+
+enter image description here
+
+GeoData Manhattan apts for rent
+
+enter image description here
+
+Rental Price Statistics MH Apartments
+
+enter image description here
+
+enter image description here
+
+enter image description here
+
+Apartments for Rent in MHenter image description here
+
+MH apt for rent with venue clusters
+
+enter image description here
+
+Venues of cluster 3
+
+enter image description here
+
+Manhattan subway stations geodata
+
+enter image description here
+
+Apts for rent (blue) and subway stations (red)
+
+enter image description here
+
+Selected Apartment!
+
+The ONE consolidated map shows all information for decision: Apartments address, price, neighborhood, cluster of venues and subway station nearby. Blue dots=apts , Red dots=Subway station, Bubbles=Cluster of Venues
+
+enter image description here
+
+Walk from home to work is less than 1 km
+
+enter image description here
+
+Venus in Cluster 2 near future home
+
+enter image description here
+
+Conclusions
+
+• I feel rewarded with the efforts, time and cash spent. I believe this course with all the topics lined is well worthy of appreciation.
+
+• This project has shown Pine Tree State an employment to resolve a real scenario that has impacting personal and money impact mistreatment knowledge Science tools.
+
+• The mapping with geological formation could be a terribly powerful technique to consolidate data and create the analysis and call thoroughly and confidently. I'd suggest for use in similar things.
+
+• One should keep up with recent tools for DS that continue to appear for application in many business fields.
